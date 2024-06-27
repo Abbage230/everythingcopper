@@ -1,3 +1,13 @@
+1.20.1-2.3.4
+
+- Fixed tool tier registration
+
+
+1.20.1-2.3.3
+
+- Removed log spam from copper bulbs
+
+
 1.20.1-2.3.2
 
 - Fixed copper anvils not lasting

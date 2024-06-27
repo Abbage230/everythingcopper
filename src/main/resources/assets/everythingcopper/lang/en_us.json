@@ -355,7 +355,7 @@
     "death.attack.everythingcopper.copper_poisoning1.player": "%1$s chipped their last tooth eating copper while tickling %2$s",
     "death.attack.everythingcopper.copper_poisoning2": "Copper poisoning got the better of %1$s",
     "death.attack.everythingcopper.copper_poisoning2.player": "Copper poisoning got the better of %1$s. We should all blame %2$s",
-    "death.attack.everythingcopper.copper_poisoning3": "%1$s choked on a copper nug. Don't eat metal kids!",
+    "death.attack.everythingcopper.copper_poisoning3": "%1$s choked on a copper nugget. Don't eat metal kids!",
     "death.attack.everythingcopper.copper_poisoning3.player": "%1$s choked on a copper nug when running from %2$s. Don't eat while running.",
 
     "advancements.adventure.consume_copper_nugget.title": "Crack a tooth",

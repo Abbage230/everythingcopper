@@ -190,16 +190,6 @@ public class CopperRecipeProvider extends RecipeProvider
                 .unlockedBy("copper", InventoryChangeTrigger.TriggerInstance.hasItems(Items.COPPER_INGOT))
                 .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_SHIELD.get())
-                .pattern("wiw")
-                .pattern("www")
-                .pattern(" w ")
-                .define('w', ItemTags.PLANKS)
-                .define('i', Tags.Items.INGOTS_COPPER)
-                .group(EverythingCopper.MODID)
-                .unlockedBy("copper", InventoryChangeTrigger.TriggerInstance.hasItems(Items.COPPER_INGOT))
-                .save(consumer);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_HELMET.get())
                 .pattern("iii")
                 .pattern("i i")

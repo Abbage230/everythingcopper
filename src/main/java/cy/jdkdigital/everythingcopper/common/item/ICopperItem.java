@@ -1,50 +1,26 @@
 package cy.jdkdigital.everythingcopper.common.item;
 
+import cy.jdkdigital.everythingcopper.EverythingCopper;
+import cy.jdkdigital.everythingcopper.init.ModTags;
 import cy.jdkdigital.everythingcopper.util.WeatheringUtils;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.common.ForgeTier;
+import net.minecraftforge.common.TierSortingRegistry;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public interface ICopperItem
 {
-    Tier COPPER_TIER = new Tier() {
-        @Override
-        public int getUses() {
-            return 180;
-        }
-
-        @Override
-        public float getSpeed() {
-            return 7.0F;
-        }
-
-        @Override
-        public float getAttackDamageBonus() {
-            return 1.8F;
-        }
-
-        @Override
-        public int getLevel() {
-            return 2;
-        }
-
-        @Override
-        public int getEnchantmentValue() {
-            return 18;
-        }
-
-        @Override
-        public Ingredient getRepairIngredient() {
-            return Ingredient.of(Items.COPPER_INGOT);
-        }
-    };
+    Tier COPPER_TIER = TierSortingRegistry.registerTier(new ForgeTier(2, 180, 7.0f, 1.8f, 18, ModTags.NEEDS_COPPER_TOOL, () ->    Ingredient.of(Items.COPPER_INGOT)), new ResourceLocation(EverythingCopper.MODID, "copper"), List.of(Tiers.WOOD, Tiers.STONE), List.of(Tiers.DIAMOND, Tiers.NETHERITE));;
 
     ArmorMaterial COPPER_MATERIAL = new ArmorMaterial() {
         @Override

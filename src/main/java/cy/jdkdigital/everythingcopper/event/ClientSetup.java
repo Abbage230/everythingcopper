@@ -12,7 +12,6 @@ import cy.jdkdigital.everythingcopper.init.ModEntities;
 import cy.jdkdigital.everythingcopper.init.ModItems;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.BiomeColors;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;

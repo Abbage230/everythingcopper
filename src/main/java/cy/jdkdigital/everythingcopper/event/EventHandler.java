@@ -109,7 +109,7 @@ public class EventHandler
     public static void buildContents(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey().equals(CreativeModeTabs.COMBAT)) {
             event.accept(ModItems.COPPER_SWORD.get());
-            event.accept(ModItems.COPPER_SHIELD.get());
+//            event.accept(ModItems.COPPER_SHIELD.get());
             event.accept(ModItems.COPPER_HELMET.get());
             event.accept(ModItems.COPPER_CHESTPLATE.get());
             event.accept(ModItems.COPPER_LEGGINGS.get());
